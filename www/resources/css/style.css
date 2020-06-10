@@ -1,0 +1,598 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* #ab892f */
+
+/********** HEADER ************/
+
+header {
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgb(248, 247, 247, 0.3)),
+            to(rgba(248, 247, 247, 1))
+        ),
+        url("possibleHero1.jpg");
+    background-image: linear-gradient(rgb(248, 247, 247, 0.3), rgba(248, 247, 247, 1)), url("possibleHero1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    height: 115px;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black {
+    margin: 5px 0;
+    height: 40px;
+    width: auto;
+    float: left;
+    display: none;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 86px;
+    margin-left: 30px;
+}
+
+.main-nav li {
+    display: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #555;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 93%;
+    margin-left: 10px;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #ab892f;
+    padding-bottom: 4px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+    box-shadow: 0 2px 2px rgb(221, 219, 219);
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li {
+    display: inline-block;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    font-size: 80%;
+    padding: 4px 0;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    width: 600px;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 10%;
+    color: #ab892f;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero-text a:first-of-type {
+    font-size: 90%;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 170%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    color: #907428;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 1px;
+    background-color: #907428;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #907428;
+}
+
+section.testimonial:after {
+    content: url("clip.png");
+    display: block;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    height: 100px;
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+    border: 1px solid #ab892f;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 95%;
+    font-weight: 300;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -webkit-box-shadow: 1px 1px 1px #999;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #ab892f;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #ab892fff;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #907428;
+    border: 1px solid #907428;
+}
+
+.testimonial {
+    padding: 80px 0;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.icon {
+    height: 100px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 140%;
+    font-weight: 200;
+    line-height: 145%;
+    word-spacing: 1px;
+}
+
+.services {
+    background-color: rgb(248, 248, 242);
+    padding: 30px 0;
+    height: 100vh;
+    text-align: left;
+    position: relative;
+}
+
+.long-copy {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 110%;
+    line-height: 145%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.award-photo {
+    height: 200px;
+    position: absolute;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    top: 10px;
+    left: 50px;
+}
+
+.box p,
+.steps p {
+    margin-bottom: 23px;
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.packages h2 {
+    padding-top: 20px;
+}
+
+.package-box {
+    padding: 50px;
+    text-align: center;
+}
+
+.package-box h3 {
+    text-align: center;
+}
+.package-box img {
+    height: 100px;
+}
+
+.package-list {
+    list-style: none;
+}
+
+.package-list li {
+    padding-bottom: 5px;
+}
+
+.package-price {
+    font-size: 120%;
+    font-style: italic;
+    color: #907428;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.background-scroll {
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgb(248, 247, 247, 0.6)),
+            to(rgba(248, 247, 247, 0.5))
+        ),
+        url("potback5.jpg");
+    background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)), url("potback5.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.gallery {
+    padding: 50px 0;
+}
+
+.photos,
+.photos1 {
+    list-style: none;
+}
+
+.photos li {
+    width: 25%;
+    float: left;
+}
+
+.photos figure,
+.photos1 figure {
+    width: 100%;
+    overflow: hidden;
+}
+
+.photos img,
+.photos1 img {
+    width: 100%;
+    opacity: 0.8;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.photos img:hover,
+.photos1 img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.photos1 li {
+    width: 50%;
+    float: left;
+}
+
+.steps {
+    background-color: rgb(248, 248, 242);
+
+    text-align: center;
+    padding: 90px 0;
+}
+
+.steps .step-heading {
+    font-size: 130%;
+    color: #907428;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.step-box {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.background-scroll2 {
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgb(248, 247, 247, 0.6)),
+            to(rgba(248, 247, 247, 0.5))
+        ),
+        url("potback4.jpg");
+    background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)), url("potback4.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.testimonial1 {
+    padding: 70px 0;
+}
+
+section.testimonial1:after {
+    content: url("clip.png");
+    display: block;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    height: 100px;
+    text-align: center;
+}
+
+.testimonial-box:first-child {
+    text-align: right;
+}
+
+.testimonial-box:last-child {
+    padding-top: 50px;
+}
+
+.testimonial-box img {
+    width: 50%;
+}
+
+footer {
+    background-color: #888;
+    padding: 50px 0;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    font-size: 110%;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+
+.footer-photos {
+    padding: 20px;
+    list-style: none;
+}
+
+.footer-photos li {
+    width: 16%;
+    float: left;
+}
+
+.footer-photos figure {
+    width: 100%;
+}
+
+.footer-photos img {
+    width: 100%;
+}
+
+.social-links {
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-links li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 150%;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    color: #fff;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color: #907428;
+}
+
+.form {
+    background-color: rgb(248, 248, 242);
+    padding-bottom: 80px;
+    padding-top: 55px;
+    position: relative;
+}
+
+.form h2,
+.form p {
+    text-align: center;
+    margin-left: 10%;
+    width: 35%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    border: 0.2px solid rgb(212, 209, 209);
+    text-align: center;
+}
+
+.wrapper img {
+    width: 80%;
+    height: auto;
+    padding-top: 7%;
+}
+
+.wrapper #details {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 75%;
+    font-weight: 400;
+    line-height: 140%;
+    color: #907428;
+    padding: 10px 0;
+}
+
+.wrapper #details #small-text {
+    font-size: 60%;
+    color: #444;
+}
+
+.form p {
+    padding-bottom: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 70%;
+    height: 50px;
+    margin-left: 22%;
+    position: relative;
+}
+
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 15px;
+    padding-left: 2px;
+    position: absolute;
+}
+
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 15px;
+    padding-left: 2px;
+    position: absolute;
+}
+
+.contact-form input::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 15px;
+    padding-left: 2px;
+    position: absolute;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 15px;
+    padding-left: 2px;
+    position: absolute;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+form a {
+    margin-left: 22%;
+}

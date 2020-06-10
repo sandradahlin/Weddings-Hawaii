@@ -1,0 +1,260 @@
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+    .award-photo {
+        display: none;
+    }
+
+    .services {
+        height: 70vh;
+    }
+
+    .form h2,
+    .form p {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .form a {
+        margin-left: 13%;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 1% auto;
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        margin-left: 0;
+        border: 0.5px solid #444;
+        border-radius: 2px;
+        margin-left: 10%;
+    }
+
+    .wrapper {
+        top: 30%;
+        right: 3%;
+        border: none;
+    }
+
+    .wrapper img {
+        width: 45%;
+    }
+    .wrapper #details {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+    .row {
+        padding: 0 2%;
+    }
+    .award-photo {
+        display: none;
+    }
+
+    .services {
+        height: 70vh;
+    }
+
+    .form h2,
+    .form p {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .form a {
+        margin-left: 13%;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 1% auto;
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        margin-left: 0;
+        border: 0.5px solid #444;
+        border-radius: 2px;
+        margin-left: 10%;
+    }
+
+    .wrapper {
+        top: 30%;
+        right: 3%;
+        border: none;
+    }
+
+    .wrapper img {
+        width: 45%;
+    }
+    .wrapper #details {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+    .award-photo {
+        display: none;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    .main-nav {
+        float: right;
+        margin-top: 0;
+        margin-left: 25px;
+        margin-right: 3%;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+        font-size: 90%;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+
+    .hero-text {
+        width: 60%;
+        text-align: left;
+        font-size: 90%;
+        top: 70%;
+    }
+    .testimonial-box:first-child {
+        text-align: center;
+    }
+
+    section.testimonial:after {
+        display: none;
+    }
+
+    .services {
+        height: auto;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 1% auto;
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .form a {
+        margin-left: 0;
+    }
+    .wrapper {
+        display: none;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .award-photo {
+            display: none;
+        }
+        .row {
+            padding: 0 2%;
+        }
+        .hero-text {
+            width: 70%;
+            text-align: left;
+            font-size: 80%;
+            top: 80%;
+        }
+
+        .testimonial-box:first-child {
+            text-align: center;
+        }
+
+        .main-nav li {
+            display: block;
+        }
+
+        .main-nav li a:link,
+        .main-nav li a:visited {
+            display: block;
+            border: 0;
+            padding: 10px 0;
+            font-size: 100%;
+            margin-top: 0;
+        }
+
+        .sticky .main-nav {
+            margin-top: 10px;
+            font-size: 90%;
+        }
+
+        .sticky .main-nav li a:link,
+        .sticky .main-nav li a:visited {
+            padding: 10px 0;
+        }
+        .sticky .mobile-nav-icon i {
+            color: #555;
+        }
+
+        .sticky .mobile-nav-icon {
+            margin-top: 10px;
+        }
+    }
+}
